@@ -86,53 +86,92 @@ button:hover {
     background: #ff7199;
 }
 
-/* Surprise */
+/* Surprise button */
+.surprise-start {
+    text-align: center;
+    margin: 40px 0;
+}
 
+#surpriseBtn {
+    padding: 16px 30px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #ff4f81, #ff1493);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 25px rgba(255, 20, 147, 0.5);
+    transition: 0.3s;
+}
+
+#surpriseBtn:hover {
+    transform: scale(1.08);
+}
+
+/* Hidden initially */
 .hidden {
     display: none;
 }
 
-#surprise {
-    padding: 100px 20px;
-    background: #210010;
-}
-
-.card {
-    max-width: 750px;
-    margin: auto;
-
-    padding: 50px 30px;
-
+/* Birthday message */
+.birthday-message {
+    max-width: 850px;
+    margin: 50px auto;
+    padding: 60px 40px;
     text-align: center;
-
     border-radius: 30px;
-
-    background: rgba(255,255,255,0.07);
-    border: 1px solid rgba(255,255,255,0.15);
-
-    box-shadow: 0 0 50px rgba(255, 62, 120, 0.3);
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 40px rgba(255, 20, 147, 0.25);
 }
 
-.big-heart {
+/* Animation when opened */
+.birthday-message.show {
+    animation: surpriseOpen 1.2s ease forwards;
+}
+
+@keyframes surpriseOpen {
+    from {
+        opacity: 0;
+        transform: scale(0.5) translateY(80px);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+.heart {
     font-size: 70px;
     animation: heartbeat 1.2s infinite;
 }
 
-.card h2 {
-    font-size: 35px;
-    margin: 25px 0;
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
 }
 
-.card p {
+.birthday-message h1 {
+    font-size: 42px;
+    margin: 20px 0;
+}
+
+.birthday-message p {
+    font-size: 19px;
     line-height: 1.8;
-    margin: 15px 0;
-    font-size: 18px;
 }
 
-.love-text {
-    color: #ff8cab;
-    font-size: 28px !important;
-    font-weight: bold;
+.birthday-message h2 {
+    color: #ff8fb3;
+    font-size: 30px;
+    margin-top: 30px;
 }
 
 /* Countdown */

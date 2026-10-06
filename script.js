@@ -1,17 +1,22 @@
-/* Surprise button */
+const surpriseBtn = document.getElementById("surpriseBtn");
+const birthdayMessage = document.getElementById("birthdayMessage");
 
-function openSurprise() {
+surpriseBtn.addEventListener("click", function () {
 
-    const surprise = document.getElementById("surprise");
+    birthdayMessage.classList.remove("hidden");
 
-    surprise.classList.remove("hidden");
+    setTimeout(() => {
+        birthdayMessage.classList.add("show");
+    }, 50);
 
-    surprise.scrollIntoView({
-        behavior: "smooth"
+    surpriseBtn.style.display = "none";
+
+    // Scroll smoothly to the surprise
+    birthdayMessage.scrollIntoView({
+        behavior: "smooth",
+        block: "center"
     });
-
-    createHearts(20);
-}
+});
 
 
 /* Birthday countdown */
