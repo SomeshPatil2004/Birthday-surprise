@@ -263,7 +263,7 @@ button:hover {
 }
 
 .photo img {
-    width: 100%;
+    width: 100px;
     height: 300px;
 
     object-fit: cover;
