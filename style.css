@@ -264,7 +264,7 @@ button:hover {
 
 .photo img {
     width: 100%;
-    height: 400px;
+    height: 300px;
 
     object-fit: cover;
 
@@ -463,38 +463,6 @@ footer {
 
 .song-button:hover {
     transform: scale(1.08);
-}
-
-.love-note {
-    max-width: 800px;
-    width: 90%;
-    box-sizing: border-box;
-    margin: 50px auto;
-    padding: 35px 25px;
-    text-align: center;
-    border-radius: 25px;
-    background: rgba(255, 105, 180, 0.10);
-    border: 1px solid rgba(255, 143, 179, 0.35);
-    box-shadow: 0 0 30px rgba(255, 20, 147, 0.15);
-}
-
-.love-note h2,
-.love-note h3 {
-    text-align: center;
-    color: #ff8fb3;
-    line-height: 1.6;
-}
-
-.love-note p {
-    text-align: center;
-    line-height: 1.8;
-    overflow-wrap: anywhere;
-}
-
-.big-heart {
-    text-align: center;
-    font-size: 45px;
-    margin: 20px 0;
 }
 
 }
